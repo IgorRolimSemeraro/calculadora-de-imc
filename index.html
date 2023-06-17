@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="icon" href="./src/image/icon.ico">
+</head>
+<body>
+    <main class="conteudo">
+        <div class="explicacao">
+            <h1 class="explicacao__titulo">Calcule seu IMC</h1>
+            <p class="explicacao__paragrafo">Insira os valores e calcule seu índice de massa corporal!</p>
+            <br>
+        </div>
+        <form class="formulario">
+            <fieldset class="formulario__bordas">
+                <div class="formulario__numeros">
+                    <br>
+                    <label for="altura">Sua Altura:</label>
+                    <input type="number" name="altura" placeholder="Metros (m)" id="altura" maxlength="4" step="0.01" required>
+                </div>
+                <br>
+                <div class="formulario__numeros">
+                    <label for="peso">Seu Peso:</label>
+                    <input type="number" name="peso" placeholder="Quilos (kg)" id="peso" maxlength="6" required>
+                </div>
+                
+                <br>
+                <div class="formulario__botao">
+                    <input type="button" onclick="fazerCalculo()" value="Calcular" id="calcular">
+                </div>
+                
+                <br>
+                <div id="resultado"></div>
+            </fieldset>
+        </form>
+        
+        <aside class="menu-lateral">
+            <ul>
+                <li>
+                    <a href="https://linkedin.com/in/igor-rolim-semeraro">
+                        <img src="./src/image/linkedin.png" alt="icone Linkedin" class="icone">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/IgorRolimSemeraro">
+                        <img src="./src/image/github.png" alt="icone GitHub" class="icone">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/igorsemeraro">
+                        <img src="./src/image/instagram.png" alt="icone Instagram" class="icone">
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="links-abaixo">
+            <a href="https://linkedin.com/in/igor-rolim-semeraro">
+                <img src="./src/image/linkedin.png" alt="icone Linkedin" class="icone-abaixo">
+            </a>
+            <a href="https://github.com/IgorRolimSemeraro">
+                <img src="./src/image/github.png" alt="icone GitHub" class="icone-abaixo">
+            </a>
+            <a href="https://instagram.com/igorsemeraro">
+                <img src="./src/image/instagram.png" alt="icone Instagram" class="icone-abaixo">
+            </a>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Igor Rolim Semeraro.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

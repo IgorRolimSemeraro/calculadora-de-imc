@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter&family=Jost:wght@600&family=Open+Sans:wght@600&family=Quicksand:wght@300;400&family=Rubik:wght@600&display=swap');
+
+:root {
+    --cor-fundo: #161A25;
+    --cor-primaria: #000000 ;
+    --cor-secundaria: rgb(255, 255, 255) ;
+
+    --primeira-fonte: 'Jost', sans-serif;
+    --segunda-fonte: 'Inter', sans-serif;
+    --terceira-fonte: 'Fira Sans', sans-serif;
+    --quarta-fonte: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 100%; */
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+}
+
+.conteudo {
+    flex-grow: 1;
+    /* padding: 18% 15%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.explicacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explicacao__titulo {
+    font-size: 2.50rem;
+    font-family: var(--primeira-fonte);
+    font-weight: 600;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+}
+
+.explicacao__paragrafo {
+    font-size: 1rem;
+    font-family: var(--segunda-fonte);
+    font-weight: 400;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+}
+
+.formulario {
+    width: 30%;
+}
+
+.formulario__bordas {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 1px 1px 10px black;
+}   
+
+.formulario__numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-family: var(--segunda-fonte);
+    font-size: 1rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 6px black;
+}
+
+#altura {
+    width: 230px;
+    height: 25px;
+    border-radius: 6px;
+    border: 2px solid;
+    font-family: var(--segunda-fonte);
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    box-shadow: 1px 1px 6px black;
+}
+
+#peso {
+    width: 230px;
+    height: 25px;
+    border-radius: 6px;
+    border: 2px solid;
+    font-family: var(--segunda-fonte);
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    box-shadow: 1px 1px 6px black;
+}
+
+.formulario__botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#calcular {
+    background-color: slateblue;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px black;
+    font-family: var(--quarta-fonte);
+    font-weight: 600;
+    color: white;
+}
+
+#calcular:hover {
+    transform: scale(1.05);
+}
+
+#calcular:active {
+    transform: translateY(2px);
+}
+
+#resultado {
+    display: flex;
+    justify-content: center;
+    font-family: var(--quarta-fonte);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 40%;
+    left: 10px;
+    width: 80px;
+}
+
+.icone {
+    width: 30px;
+    margin-bottom: 3px;
+}
+
+.icone:hover {
+    transform: scale(1.05);
+}
+
+.links-abaixo {
+    display: none;
+}
+
+.rodape {
+    position: relative;
+    margin-top: auto;
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--quarta-fonte);
+    font-weight: 500;
+}
+
+@media (max-width: 670px) {
+    .formulario {
+        width: 300px;
+    }
+}
+
+@media (max-width: 570px) {
+    .conteudo {
+        padding: 10%;
+    }
+
+    .explicacao__paragrafo{
+        /* font-size: 0.9rem; */
+        text-align: center;
+    }
+    
+    .menu-lateral {
+        display: none;
+    }
+
+    .links-abaixo {
+        position: fixed;
+        top: 78%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icone-abaixo {
+        width: 30px;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    .links-abaixo {
+        top: 82%
+    }
+}
