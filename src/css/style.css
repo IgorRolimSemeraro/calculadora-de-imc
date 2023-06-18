@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* gap: 20px; */
 }
 
 .explicacao {
@@ -189,8 +190,8 @@ body {
     }
 
     .links-abaixo {
-        position: fixed;
-        top: 78%;
+        position: relative;
+        top: 78px;
         display: flex;
         align-items: center;
         gap: 20px;

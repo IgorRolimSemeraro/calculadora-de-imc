@@ -1,8 +1,8 @@
 # Calculadora de IMC
 
-# Olá, Bem vindo ao meu projeto de uma calculadora de imc. Esse projeto foi feito por mim usando meus conhecimentos de HTML, CSS e JavaScript.
+# Olá, Bem vindo ao meu projeto de uma calculadora de índice de massa corporal, onde você inseri sua altura corretamente ex: 1,70 e logo abaixo o seu peso. Esse projeto foi feito por mim usando meus conhecimentos de HTML, CSS e JavaScript.
 
-![image]()
+![image](https://raw.githubusercontent.com/IgorRolimSemeraro/calculadora-de-imc/main/src/image/screenshot.png)
 
 ## Ferramentas utilizadas:
 
@@ -18,4 +18,4 @@
 
 ### Igor Rolim Semeraro
 
-### Linkedin: https://www.linkedin.com/in/igor-rolim-semeraro-2002a5279/
+### Linkedin: https://www.linkedin.com/in/igor-rolim-semeraro
